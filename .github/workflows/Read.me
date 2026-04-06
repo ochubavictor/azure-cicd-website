@@ -1,0 +1,40 @@
+# CI/CD Pipeline: Automated Deployment to Azure VM
+
+## 🔗 Live Demo
+http://172.190.109.39
+
+## 📌 Overview
+This project demonstrates a CI/CD pipeline that automatically deploys a website to an Azure Linux Virtual Machine using GitHub Actions.
+
+## ⚙️ Tools Used
+- Microsoft Azure (Linux VM)
+- Nginx (Web Server)
+- Git & GitHub
+- GitHub Actions
+- SSH
+
+## 🏗 Architecture
+Local Code → GitHub Repository → GitHub Actions → Azure VM → Nginx
+
+## 🚀 What This Does
+- Automatically deploys website updates on every push to the main branch  
+- Uses SSH to securely connect to the server  
+- Restarts Nginx after deployment  
+
+## 🧪 How It Works
+1. Code is pushed to GitHub  
+2. GitHub Actions workflow is triggered  
+3. Files are copied to the Azure VM  
+4. Nginx serves the updated website  
+
+## 📸 Result
+After updating the HTML file and pushing changes, the live website updates automatically without manual intervention.
+
+## 🔧 Challenges Faced
+- Setting up Git and configuring the local environment  
+- Understanding the difference between local machine and server operations  
+- Fixing SSH key authentication for automated deployment  
+- Debugging file paths and permissions in the workflow  
+
+## 🧠 Key Learning
+This project helped me understand how to automate deployments, work with SSH-based authentication, and build reliable, repeatable systems in DevOps
